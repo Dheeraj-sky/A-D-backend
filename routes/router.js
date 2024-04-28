@@ -22,7 +22,7 @@ router.get("/getproductsone/:id", async (req, res) => {
     // console.log(id);
 
     const individuadata = await Products.findOne({ id: id });
-    // console.log(individuadata);
+    console.log(individuadata);
     res.status(201).json(individuadata);
   } catch (error) {
     res.status(400).json(individuadata);
